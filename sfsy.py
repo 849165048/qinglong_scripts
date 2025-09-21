@@ -46,7 +46,7 @@ except ImportError:
     print("⚠️  未加载通知模块，跳过通知功能")
 
 # 随机延迟配置
-max_random_delay = int(os.getenv("MAX_RANDOM_DELAY", "10"))
+max_random_delay = int(os.getenv("MAX_RANDOM_DELAY", "120"))
 random_signin = os.getenv("RANDOM_SIGNIN", "true").lower() == "true"
 
 # 全局日志变量
@@ -645,7 +645,7 @@ def get_quarter_end_date():
 if __name__ == '__main__':
     """主程序入口"""
     APP_NAME = '顺丰速运'
-    ENV_NAME = 'sfsyUrl3'
+    ENV_NAME = 'sfsyUrl'
     
     print(f"==== 顺丰速运签到开始 - {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} ====")
     
@@ -687,6 +687,6 @@ if __name__ == '__main__':
             except Exception as e:
                 print(f'❌ 汇总通知发送失败: {e}')
     else:
-        Log("❌ 未获取到sfsyUrl3环境变量")
+        Log("❌ 未获取到sfsyUrl1环境变量")
     
     print(f"==== 顺丰速运签到完成 - {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} ====")
