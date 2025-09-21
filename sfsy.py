@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 """
-cron "9 15 * * *" script-path=xxx.py,tag=匹配cron用
+cron "0,8 15 * * *" script-path=xxx.py,tag=匹配cron用
 new Env('顺丰速运签到')
 """
 """
