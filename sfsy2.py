@@ -645,7 +645,7 @@ def get_quarter_end_date():
 if __name__ == '__main__':
     """主程序入口"""
     APP_NAME = '顺丰速运'
-    ENV_NAME = 'sfsyUrl1'
+    ENV_NAME = 'sfsyUrl2'
     
     print(f"==== 顺丰速运签到开始 - {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} ====")
     
@@ -687,6 +687,6 @@ if __name__ == '__main__':
             except Exception as e:
                 print(f'❌ 汇总通知发送失败: {e}')
     else:
-        Log("❌ 未获取到sfsyUrl1环境变量")
+        Log("❌ 未获取到sfsyUrl2环境变量")
     
     print(f"==== 顺丰速运签到完成 - {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} ====")
