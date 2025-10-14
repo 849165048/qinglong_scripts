@@ -601,14 +601,14 @@ class RUN:
         self.get_SignTaskList(True)
 
         # 执行丰蜜任务
-        self.get_honeyTaskListStart()
-        self.honey_indexData()
-        self.honey_indexData(True)
+        # self.get_honeyTaskListStart()
+        # self.honey_indexData()
+        # self.honey_indexData(True)
 
         # 检查活动截止时间
-        activity_end_date = get_quarter_end_date()
-        days_left = (activity_end_date - datetime.now()).days
-        Log(f"⏰ 采蜜活动截止兑换还有{days_left}天，请及时进行兑换！！")
+        # activity_end_date = get_quarter_end_date()
+        # days_left = (activity_end_date - datetime.now()).days
+        # Log(f"⏰ 采蜜活动截止兑换还有{days_left}天，请及时进行兑换！！")
 
         # 会员日任务（每月26-28日）
         if 26 <= datetime.now().day <= 28:
